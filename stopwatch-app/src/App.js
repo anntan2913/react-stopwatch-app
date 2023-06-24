@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Button from './components/Button/Button';
 import Timer from './components/Timer/Timer';
+import Container from './components/Container/Container';
 
 const App = () => {
 
@@ -38,12 +39,12 @@ const App = () => {
   };
   
   return (
-    <div>
+    <Container>
       <Timer time={time} />
       <Button action={handleStart}>Start</Button>
       <Button action={handleStop}>Stop</Button>
       <Button action={handleReset}>Reset</Button>
-    </div>
+    </Container>
   );
 };
 
