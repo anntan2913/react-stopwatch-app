@@ -1,0 +1,10 @@
+@import '../../styles/settings.scss';
+
+.timer {
+    //border: 0;
+    color: $color-light;
+    text-align: justify;
+    font-size: 46px;
+    font-weight: 400;
+    margin: 0 $base-size $base-size $base-size;
+}
