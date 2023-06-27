@@ -30,12 +30,15 @@ const App = () => {
     if(timerRunning) {
       setTimerRunning(false);
       clearInterval(timer);
+      setTimer(null);
     }
   };
 
   const handleReset = () => {
     setTimerRunning(false);
     setTime(0);
+    clearInterval(timer);
+    setTimer(null);
   };
   
   return (
